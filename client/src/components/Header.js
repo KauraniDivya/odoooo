@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { FaUser, FaSignOutAlt, FaHotel, FaCalendarAlt, FaCog } from 'react-icons/fa';
-import { logout } from '../redux/authSlice';
+import { logout } from '../features/auth/authSlice';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -33,7 +33,11 @@ const Header = () => {
                       <FaCalendarAlt className="mr-2" /> My Bookings
                     </Link>
                   </li>
-                    
+                    <li>
+                      <Link to="/admin/rooms" className="flex items-center hover:text-yellow-400 transition duration-300">
+                        <FaCog className="mr-2" /> User
+                      </Link>
+                    </li>
                   <li>
                     <button 
                       onClick={handleLogout} 
