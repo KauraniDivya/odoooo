@@ -33,11 +33,7 @@ const Header = () => {
                       <FaCalendarAlt className="mr-2" /> My Bookings
                     </Link>
                   </li>
-                    <li>
-                      <Link to="/admin/rooms" className="flex items-center hover:text-yellow-400 transition duration-300">
-                        <FaCog className="mr-2" /> User
-                      </Link>
-                    </li>
+                    
                   <li>
                     <button 
                       onClick={handleLogout} 

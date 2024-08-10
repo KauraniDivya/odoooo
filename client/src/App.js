@@ -4,11 +4,11 @@ import { AnimatePresence } from 'framer-motion';
 
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import RoomListPage from './pages/RoomListPage';
-import RoomDetailPage from './pages/RoomDetailsPage';
-import BookingsPage from './pages/BookingsPage';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import RoomList from './pages/RoomList';
+import RoomDetailPage from './pages/RoomDetails';
+import Bookings from './pages/Bookings';
 
 
 function App() {
@@ -19,11 +19,11 @@ function App() {
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
-            <Route path="/rooms" element={<RoomListPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/rooms" element={<RoomList />} />
             <Route path="/rooms/:id" element={<RoomDetailPage />} />
-            <Route path="/bookings" element={<BookingsPage />} />
+            <Route path="/bookings" element={<Bookings />} />
           </Routes>
         </AnimatePresence>
       </main>
