@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { FaUser, FaSignOutAlt, FaHotel, FaCalendarAlt, FaCog } from 'react-icons/fa';
-import { logout } from '../features/auth/authSlice';
+import { logout } from '../redux/authSlice';
 
 const Header = () => {
   const dispatch = useDispatch();

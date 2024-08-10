@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { createBooking } from '../features/booking/bookingSlice';
+import { createBooking } from '../redux/bookingSlice';
 import { FaCalendar, FaClock, FaCheckCircle } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion';
